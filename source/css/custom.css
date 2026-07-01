@@ -13,3 +13,32 @@
     color: white !important;
     margin-left: 0px !important; /* 让字和左边的图片 Logo 拉开一点距离 */
 }
+
+/* 替换公告栏的小喇叭图标 */
+.card-announcement .item-headline i::before {
+    content: "\f578" !important; /* f578 是 fa-fish 的编码 */
+    color: #4ea1db !important;  /* 浅蓝色，像水一样的颜色 */
+    font-size: 1.1rem;           /* 稍微调大一点 */
+}
+
+/* 顺便实现你刚才说的：公告文字变小、一排显示 */
+.card-announcement .announcement_content {
+    font-size: 0.85rem !important;
+    white-space: normal !important;    /* 允许自动换行 */
+    text-align: center !important;     /* 文字居中 */
+    line-height: 1.6 !important;       /* 增加行高，换行后不拥挤 */
+    padding: 10px 5px !important;      /* 增加上下边距，更有呼吸感 */
+}
+/* 修改公告栏标题为猫猫颜文字 */
+.card-announcement .item-headline span {
+    font-size: 0 !important; /* 隐藏原有的“公告”字样 */
+}
+
+.card-announcement .item-headline span::before {
+    content: " ฅ(^•ω•^ฅ)" !important; /* 在这里换上你喜欢的猫猫颜文字 */
+    font-size: 1.1rem !important;      /* 颜文字建议用 1.1rem，看得更清楚 */
+    font-family: "Segoe UI Symbol", "Apple Color Emoji", "sans-serif"; /* 确保特殊符号正常显示 */
+    letter-spacing: 0px; 
+    color: #555; /* 颜色可以根据你的喜好调整 */
+}
+

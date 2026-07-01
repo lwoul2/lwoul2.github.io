@@ -46,6 +46,8 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
+  fab fa-x-twitter: https://x.com/lwoul2 || Twitter || "#000"
+  fas fa-tv: https://bgm.tv/user/lwoul2 || Bangumi || "#f09199"
   # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
 
@@ -53,7 +55,7 @@ social:
 # Image Settings
 # --------------------------------------
 
-favicon: /img/favicon.png
+favicon: /img/favicon.jpg
 
 avatar:
   img: /img/avatar.png
@@ -294,7 +296,7 @@ aside:
       link: https://x.com/lwoul2
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: すごいことなんてない　当たり前のことしか起こらない
   card_recent_post:
     enable: true
     # If set 0 will show all
