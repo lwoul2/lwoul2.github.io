@@ -1,0 +1,15 @@
+/* 1. 针对 class="site-name" 进行修改 */
+.site-name {
+    display: none !important; /* 直接隐藏原来的“くだらない日々” */
+}
+
+/* 2. 在导航栏标题链接后面插入新文字 */
+.nav-site-title::after {
+    content: 'LWOUL2' !important; /* 换成你想要的名字 */
+    display: inline-block !important;
+    vertical-align: middle !important;
+    font-weight: bold !important;
+    font-size: 1.3rem !important;
+    color: white !important;
+    margin-left: 0px !important; /* 让字和左边的图片 Logo 拉开一点距离 */
+}
