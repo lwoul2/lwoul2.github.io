@@ -1,44 +1,167 @@
-/* 1. 针对 class="site-name" 进行修改 */
-.site-name {
-    display: none !important; /* 直接隐藏原来的“くだらない日々” */
-}
-
-/* 2. 在导航栏标题链接后面插入新文字 */
+/* 1. 顶部标题定制 */
+.site-name { display: none !important; }
 .nav-site-title::after {
-    content: 'LWOUL2' !important; /* 换成你想要的名字 */
+    content: 'LWOUL2' !important;
     display: inline-block !important;
     vertical-align: middle !important;
     font-weight: bold !important;
     font-size: 1.3rem !important;
     color: white !important;
-    margin-left: 0px !important; /* 让字和左边的图片 Logo 拉开一点距离 */
+    margin-left: 8px !important;
 }
 
-/* 替换公告栏的小喇叭图标 */
+/* 2. 公告栏优化 */
+.card-announcement .item-headline span { font-size: 0 !important; }
+.card-announcement .item-headline span::before {
+    content: " ฅ(^•ω•^ฅ)" !important; 
+    font-size: 1.1rem !important;
+    visibility: visible !important;
+}
 .card-announcement .item-headline i::before {
-    content: "\f578" !important; /* f578 是 fa-fish 的编码 */
-    color: #4ea1db !important;  /* 浅蓝色，像水一样的颜色 */
-    font-size: 1.1rem;           /* 稍微调大一点 */
+    content: "\f578" !important; 
+    color: #4ea1db !important;
+    margin-right: 5px !important;
 }
-
-/* 顺便实现你刚才说的：公告文字变小、一排显示 */
 .card-announcement .announcement_content {
     font-size: 0.85rem !important;
-    white-space: normal !important;    /* 允许自动换行 */
-    text-align: center !important;     /* 文字居中 */
-    line-height: 1.6 !important;       /* 增加行高，换行后不拥挤 */
-    padding: 10px 5px !important;      /* 增加上下边距，更有呼吸感 */
-}
-/* 修改公告栏标题为猫猫颜文字 */
-.card-announcement .item-headline span {
-    font-size: 0 !important; /* 隐藏原有的“公告”字样 */
+    white-space: normal !important;
+    text-align: center !important;
+    line-height: 1.6 !important;
+    padding: 10px 5px !important;
 }
 
-.card-announcement .item-headline span::before {
-    content: " ฅ(^•ω•^ฅ)" !important; /* 在这里换上你喜欢的猫猫颜文字 */
-    font-size: 1.1rem !important;      /* 颜文字建议用 1.1rem，看得更清楚 */
-    font-family: "Segoe UI Symbol", "Apple Color Emoji", "sans-serif"; /* 确保特殊符号正常显示 */
-    letter-spacing: 0px; 
-    color: #555; /* 颜色可以根据你的喜好调整 */
+/* 3. 收藏馆(Gallery)排版 - 优化版 */
+.my-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+    gap: 30px !important;
+    margin-top: 30px !important;
 }
 
+.art-item {
+    display: block !important;
+    width: 100% !important;
+}
+
+.art-item img {
+    width: 100% !important;
+    height: auto !important; /* 【关键修改】恢复自适应高度，绝不压扁！ */
+    border-radius: 5px !important;
+    cursor: default !important; 
+    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+    display: block !important;
+}
+
+/* 悬浮效果：只上浮，加深阴影，坚决不发光！ */
+.art-item:hover img {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2) !important;
+    filter: none !important; /* 强制消灭发光效果 */
+}
+
+.art-info {
+    display: block !important;
+    margin-top: 15px !important;
+    text-align: center !important;
+}
+
+.art-info h4 {
+    font-size: 0.8rem !important;
+    letter-spacing: 1px !important;
+    color: #999 !important;
+    text-transform: uppercase !important;
+    margin: 0 !important;
+}
+/* =========================================================
+   看板娘 (Waifu) 
+   ========================================================= */
+
+/* 1. 基础定位 */
+.waifu {
+    position: fixed;
+    bottom: -5px;
+    left: 20px;
+    z-index: 999;
+    animation: floatBreath 3s ease-in-out infinite; 
+    cursor: pointer;
+}
+
+/* 适配你设置的 70px 宽度 */
+.waifu img {
+    width: 70px !important; 
+    height: auto !important;
+    position: relative;
+    z-index: 2; 
+    transition: all 0.3s ease;
+}
+
+.waifu:hover img {
+    filter: brightness(1.05); 
+}
+
+/* 2. 漫画气泡主体 */
+.manga-bubble {
+    position: absolute;
+    bottom: 100%; /* 起始位置放在头顶正上方 */
+    left: 50%;
+    transform: translateX(-50%) scale(0); 
+    transform-origin: bottom center; 
+    opacity: 0;
+    
+    background: #ffffff;
+    color: #222;
+    font-weight: 900;
+    padding: 6px 14px;
+    border: 2px solid #222;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    z-index: 3;
+    
+    /* 稍微减弱一点阴影的浓黑感，配合透明度 */
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); 
+}
+
+/* 3. 气泡的小尾巴 */
+.manga-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 8px 7px 0;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+}
+
+.manga-bubble::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 7px 5px 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    z-index: 1;
+}
+
+/* 4. 鼠标悬浮触发动画 (解决遮挡 + 实现半透明) */
+.waifu:hover .manga-bubble {
+    opacity: 0.85 !important; /* 【半透明核心】整个气泡变为 85% 的透明度，非常有质感 */
+    transform: translateX(-50%) scale(1) translateY(-20px); /* 【防遮挡核心】向上多弹起20像素，彻底避开刘海 */
+}
+
+/* 呼吸动画 */
+@keyframes floatBreath {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+}
+
+/* 手机端隐藏 */
+@media screen and (max-width: 768px) {
+    .waifu { display: none !important; }
+}
