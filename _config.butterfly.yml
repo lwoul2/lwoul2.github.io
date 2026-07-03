@@ -11,8 +11,8 @@
 
 nav:
   # Navigation bar logo image
-  logo: /img/logo.png
-  display_title: true
+  logo: /img/logo.png 
+  display_title: false
   display_post_title: true
   # Whether to fix navigation bar
   fixed: false
@@ -70,7 +70,7 @@ default_top_img:
 index_img: /img/top_bg.jpg
 
 # The banner image of archive page
-archive_img:
+archive_img: /img/IMG_4302.JPG
 
 # Note: tag page, not tags page
 tag_img:
@@ -671,7 +671,7 @@ note:
 # --------------------------------------
 
 pjax:
-  enable: false
+  enable: true
   exclude:
 
 aplayerInject:
@@ -718,7 +718,7 @@ inject:
     - '<link rel="stylesheet" href="/css/custom.css">'
   bottom:
     - '<script src="/js/custom.js"></script>'
-    - '<a class="waifu" href="javascript:window.scrollTo({top:0,behavior:''smooth''});"><div class="manga-bubble">上に戻る？</div><img src="/img/waifu.png"></a>'
+    - '<div class="waifu" onclick="window.scrollTo({top:0,behavior:''smooth''});"><div class="manga-bubble">上に戻る？</div><img src="/img/waifu.png"></div>'
 
 # CDN Settings
 CDN:
