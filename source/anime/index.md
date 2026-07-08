@@ -5,7 +5,7 @@ type: "gallery"
 top_img: /img/anime_top.jpg
 ---
 
-# 好きなアニメ10本 ヾ(๑╹◡╹)ﾉ"　-順不同
+# 好きなアニメ9本 ヾ(๑╹◡╹)ﾉ"　-順不同
 <div class="my-grid">
   <!-- 每一块都必须被 my-grid 包裹 -->
   <div class="art-item">
