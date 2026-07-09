@@ -21,6 +21,8 @@ menu:
   Home: / || fas fa-home
   List||fas fa-list:
     Anime: /anime/ || fas fa-tv
+    Comic: /comic/ || fas fa-book   
+    Game: /game/ || fas fa-gamepad
     Music: /music/ || fas fa-music
   Collection: /gallery/ || fas fa-images
 

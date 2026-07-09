@@ -7,7 +7,7 @@ top_img: /img/anime_top.jpg
 
 # 好きなアニメ9本 ヾ(๑╹◡╹)ﾉ"　-順不同
 <div class="my-grid">
-  <!-- 每一块都必须被 my-grid 包裹 -->
+
   <div class="art-item">
     <img src="/img/anime/1.jpg" data-zoomable>
     <div class="art-info"><h4>Sonny Boy</h4></div>

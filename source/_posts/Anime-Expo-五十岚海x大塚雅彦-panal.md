@@ -2,7 +2,7 @@
 title: AnimeExpo2026 TRIGGER Panel 五十岚海x大塚雅彦
 date: 2026-07-07 17:23:30
 tags: [notes]
-categories: Panel
+categories: Anime
 cover: /img/notes/mpv-shot0384.jpg
 ---
 
