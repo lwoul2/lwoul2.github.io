@@ -177,7 +177,7 @@ post_edit:
 
 # Related Articles
 related_post:
-  enable: true
+  enable: false
   limit: 6
   date_type: created
 
@@ -718,6 +718,7 @@ css_prefix: true
 inject:
   head:
     - '<link rel="stylesheet" href="/css/custom.css">'
+  
   bottom:
     - '<script src="/js/custom.js"></script>'
     - '<div class="waifu" onclick="window.scrollTo({top:0,behavior:''smooth''});"><div class="manga-bubble">上に戻る？</div><img src="/img/waifu.png"></div>'
