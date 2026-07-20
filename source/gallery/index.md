@@ -53,6 +53,24 @@ top_img: /img/book_top.jpg
     <img src="/img/collection/IMG_7731.JPG" alt="kyoani">
     <div class="art-info"><h4>リズと青い鳥 原画集</h4></div>
   </div>
+
+  <div class="art-item">
+    <img src="/img/collection/IMG_7730.JPG" alt="GAINAX">
+    <div class="art-info"><h4>FLCL 原画集</h4></div>
+  </div>
+
+  <div class="art-item">
+    <img src="/img/collection/IMG_7729.JPG" alt="bind">
+    <div class="art-info"><h4>無職転生 PV&ED1原画集</h4></div>
+  </div>  
+
+  <div class="art-item">
+    <img src="/img/collection/IMG_7715.JPG" alt="noriyuki">
+    <div class="art-info"><h4>NRBN</h4></div>
+  </div>
+  
+
+
   
 
   
