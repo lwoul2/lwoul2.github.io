@@ -68,7 +68,27 @@ top_img: /img/book_top.jpg
     <img src="/img/collection/IMG_7715.JPG" alt="noriyuki">
     <div class="art-info"><h4>NRBN</h4></div>
   </div>
-  
+
+  <div class="art-item">
+    <img src="/img/collection/IMG_8090.JPG" alt="菅野一期">
+    <div class="art-info"><h4>ふ自由帖</h4></div>
+  </div>
+
+  <div class="art-item">
+    <img src="/img/collection/IMG_7723.JPG" alt="堀剛史">
+    <div class="art-info"><h4>堀剛史原画集2017</h4></div>
+  </div>
+
+
+  <div class="art-item">
+    <img src="/img/collection/IMG_7704.JPG" alt="bind">
+    <div class="art-info"><h4>瑠璃の宝石 おつかれさま本</h4></div>
+  </div>
+
+  <div class="art-item">
+    <img src="/img/collection/IMG_8085.JPG" alt="bind">
+    <div class="art-info"><h4>瑠璃の宝石 原画集</h4></div>
+  </div>
 
 
   
