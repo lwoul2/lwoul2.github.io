@@ -89,11 +89,7 @@ top_img: /img/anime_top.jpg
     <img src="/img/anime/f.jpg" data-zoomable>
     <div class="art-info"><h4>チェンソーマン 刺客篇</h4></div>
   </div>
-          
-  <div class="art-item">
-    <img src="/img/anime/g.jpg" data-zoomable>
-    <div class="art-info"><h4>GROTESQQQUE-グロテスク</h4></div>
-  </div>
+        
 
     
 
